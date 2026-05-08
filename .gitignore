@@ -1,0 +1,23 @@
+# Keep this repository portable and safe.
+
+# Codex secrets and local state
+auth.json
+sessions/
+archived_sessions/
+*.sqlite
+*.sqlite-*
+logs/
+cache/
+tmp/
+.tmp/
+.sandbox/
+.sandbox-bin/
+.sandbox-secrets/
+installation_id
+cap_sid
+models_cache.json
+.codex-global-state.json*
+
+# Machine-local Codex config should be generated per computer.
+config.toml
+
