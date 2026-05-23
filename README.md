@@ -69,6 +69,14 @@ Style rules for `CLAUDE.md`:
 - Omit empty sections and avoid placeholders such as `TBD` or `<path>`.
 ```
 
+## Chinese/UTF-8
+
+On Windows/PowerShell, always use explicit UTF-8 for Chinese text files: `Get-Content -Raw -Encoding UTF8` for reads, explicit UTF-8 for writes, and UTF-8 for Python/Node text I/O.
+
+Use English for code identifiers, file names, config keys, log events, and machine-readable fields. Use Chinese only for docs, prompts, user-facing copy, and business data.
+
+Prefer project scripts over ad hoc PowerShell commands for Chinese-heavy files.
+
 ## What Not To Sync
 
 Do not commit a real `~/.codex` directory or a full `config.toml` copied from a machine.
